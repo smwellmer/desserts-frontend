@@ -5,7 +5,7 @@ import Display from "./Display";
 import Form from "./Form";
 
 
-function App() {
+function App(props) {
 
 const url = "https://desserts-api.herokuapp.com"
 
@@ -19,7 +19,7 @@ const emptyDessert = {
 }
 
 const getDesserts = () => {
-  fetch(url + '/dessert')
+  fetch(url + '/desserts')
   .then((response) => response.json())
   .then((data) => {
     setDesserts(data);
@@ -31,7 +31,7 @@ useEffect(() => {getDesserts()}, [])
 const [selectedDessert, setSelectedDessert] = useState(emptyDessert)
 
 const handleCreate = (newDessert) => {
-  fetch(url + "/dessert", {
+  fetch(url + "/desserts", {
     method: "post",
     headers: {
       "Content-Type": "application/json"
@@ -44,7 +44,7 @@ const handleCreate = (newDessert) => {
 }
 
 const handleUpdate = (dessert) => {
-  fetch(url + "/dessert/"+ dessert._id, {
+  fetch(url + "/desserts/"+ dessert._id, {
     method: "put",
     headers: {
       "Content-Type": "application/json"
@@ -61,13 +61,13 @@ const selectDessert = (dessert) => {
 }
 
 const deleteDessert = (dessert) => {
-  fetch(url + "/dessert/"+ dessert._id, {
+  fetch(url + "/desserts/"+ dessert._id, {
     method: "delete"
   })
   .then(() => {
     getDesserts()
   })
-
+}
 
   return (
     <div className="App">
@@ -101,7 +101,6 @@ const deleteDessert = (dessert) => {
       </main>
     </div>
   );
-}
 }
 
 export default App
