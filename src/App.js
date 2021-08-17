@@ -74,9 +74,11 @@ const deleteDessert = (dessert) => {
       <header>
          <h1 class = 'title'>Just Desserts!</h1>
       </header>
+      <div class="hero">
             <Link to="/create">
-        <button class="addButton">Click here to add a Dessert!</button>
-      </Link>
+              <button class="addButton">Click here to add a Dessert!</button>
+            </Link>
+      </div>     
       <main>
         <Switch>
           <Route exact path="/" 

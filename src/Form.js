@@ -16,13 +16,14 @@ const Form = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form class="form" onSubmit={handleSubmit}>
         <div>Name: </div>
       <input
         type="text"
         name="name"
         value={formData.name}
         onChange={handleChange}
+        placeholder="Name of Recipe"
       />
       <div>Category:</div>
       <input
@@ -30,23 +31,26 @@ const Form = (props) => {
         name="category"
         value={formData.category}
         onChange={handleChange}
+        placeholder="Recipe Category"
       />
       <div>Image URL:</div>
       <input
         type="text"
         name="img"
         value={formData.img}
-        onChange={handleChange}              
+        onChange={handleChange}   
+        placeholder="Link for Recipe Image"           
       />
-       <div>recipe URL:</div>
+       <div>Recipe URL:</div>
       <input
         type="text"
         name="url"
         value={formData.url}
-        onChange={handleChange}              
+        onChange={handleChange}   
+        placeholder="Link to Recipe"           
       />
       <div></div>
-      <input type="submit" value={props.label} />
+      <input class="createButton" type="submit" value={props.label} />
     </form>
   );
 };

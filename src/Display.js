@@ -6,9 +6,9 @@ const Display = (props) => {
   const loaded = () => (
     <div class = "dessertContainer" style={{ textAlign: "center" }}>
       {desserts.map((dessert) => (
-        <article>
-          <h1>{dessert.name}</h1>
-          <img src={dessert.img} alt={dessert.name}/>
+        <article class="dessertTile">
+          <h1 class="dessertName">{dessert.name}</h1>
+          <img class='image' src={dessert.img} alt={dessert.name}/>
           <h3>Category: {dessert.category}</h3>
           <a href ={dessert.url}><button class = "recipeButton">Click here for the Recipe!</button></a>
           <button class = 'editButton' onClick={() => {
