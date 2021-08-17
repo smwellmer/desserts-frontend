@@ -71,10 +71,11 @@ const deleteDessert = (dessert) => {
 
   return (
     <div className="App">
-          <h1>Just Desserts!</h1>
-      <hr />
-      <Link to="/create">
-        <button>Add a Dessert</button>
+      <header>
+         <h1 class = 'title'>Just Desserts!</h1>
+      </header>
+            <Link to="/create">
+        <button class="addButton">Click here to add a Dessert!</button>
       </Link>
       <main>
         <Switch>

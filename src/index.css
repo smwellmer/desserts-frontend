@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ /* font-family: 'Open Sans Condensed', sans-serif; */
+
+
+.title {
+  font-family: 'Style Script', cursive;
+  font-size: 4em;
+  padding: 0;
+}
+header {
+  background-color: #d90368;
+  padding: 1em;
+  margin: 0 auto;
+  border-bottom: solid 8px black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.addButton{
+  margin-top: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 18px;
+  padding: 15px;
+  background-color: #f1c40f;
+}
+.dessertContainer {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+article h1 {
+  font-family: 'Style Script', cursive;
+  font-size: 2em;
+  text-decoration: underline;
+}
+.recipeButton {
+  background-color: #f1c40f;
+  border-radius: 18px;
+  font-size: 1em;
+}
+
+.editButton{
+  border-radius: 18px;
+  font-size: 1em;
+}
+
+.deleteButton {
+ font-size: 1em;
+  border-radius: 18px;
 }
