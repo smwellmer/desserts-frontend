@@ -4,11 +4,12 @@ const Display = (props) => {
   const { desserts } = props;
 
   const loaded = () => (
-    <div class = "dessertContainer" style={{ textAlign: "center" }}>
+    <div class = "dessertTileContainer" style={{ textAlign: "center" }}>
       {desserts.map((dessert) => (
         <article class="dessertTile">
-          <h1 class="dessertName">{dessert.name}</h1>
           <img class='image' src={dessert.img} alt={dessert.name}/>
+          <div class="dessertInfo">
+          <h1 class="dessertName">{dessert.name}</h1>
           <h3>Category: {dessert.category}</h3>
           <a href ={dessert.url}><button class = "recipeButton">Click here for the Recipe!</button></a>
           <button class = 'editButton' onClick={() => {
@@ -18,6 +19,7 @@ const Display = (props) => {
           <button class = 'deleteButton' onClick={() => {
             props.deleteDessert(dessert)
           }}>Delete</button>
+          </div>
         </article>
       ))}
     </div>

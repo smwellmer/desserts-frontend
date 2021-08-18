@@ -71,7 +71,7 @@ const deleteDessert = (dessert) => {
 
   return (
     <div className="App">
-      <header>
+      <header id="header">
          <h1 class = 'title'>Just Desserts!</h1>
       </header>
       <div class="hero">
