@@ -78,7 +78,8 @@ const deleteDessert = (dessert) => {
             <Link to="/create">
               <button class="addButton">Click here to add a Dessert!</button>
             </Link>
-      </div>     
+      </div>   
+      <div class="description"> Keep track of all your favorite dessert recipes!</div>  
       <main>
         <Switch>
           <Route exact path="/" 
@@ -102,6 +103,7 @@ const deleteDessert = (dessert) => {
           />
         </Switch>
       </main>
+      <footer class="footer"> Website constructed and desgined by Samantha Wellmer </footer>
     </div>
   );
 }
